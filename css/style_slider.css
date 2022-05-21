@@ -1,0 +1,171 @@
+
+/*
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+*/
+/* Footer */
+
+#banner{
+	width: 100%;
+	margin: 0;
+}
+#footer {
+	height: 100px;
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 18px;
+	line-height: normal;
+	text-align: center;
+	text-transform: lowercase;
+	font-family: 'Abel', sans-serif;
+	font-size: 16px;
+	color: #76716C;
+}
+
+#footer a {
+	text-decoration: underline;
+}
+
+#slider {
+	position: relative;
+	width: 590px;
+	margin: 0px auto 20px auto;
+}
+
+#slider .viewer {
+	width: 590px;
+	height: 300px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#slider .viewer .reel {
+	display: none;
+	height: 300px;
+}
+
+#slider .viewer .reel .slide {
+	position: relative;
+	width: 590px;
+	height: 300px;
+}
+
+#splash {
+	width: 980px;
+	margin: 30px auto 30px auto;
+}
+
+#slider {
+	position: relative;
+	margin: 0px auto;
+	width: 1000px;
+}
+
+#slider .button {
+	display: inline-block;
+	color: #ffffff;
+	text-align: center;
+	line-height: 50px;
+	height: 50px;
+	text-decoration: none;
+	outline: 0;
+	border-radius: 8px;
+	font-size: 3em;
+}
+
+#slider .button:hover {
+}
+
+#slider .viewer {
+	width: 900px;
+	height: 350px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+#slider .viewer .reel {
+	display: none;
+	height: 375px;
+}
+
+#slider .viewer .reel .slide {
+	position: relative;
+	width: 900px;
+	height: 375px;
+	margin: 0px auto;
+}
+
+#slider .viewer .reel {
+	position: absolute;
+	top: 180px;
+	left: 0;
+	width: 900px;
+	height: 80px;
+	line-height: 80px;
+	background: #111111;
+	text-align: center;
+	opacity: 0.85;
+	font-weight: normal;
+	color: #ffffff;
+	font-size: 2.25em;
+}
+
+#slider .viewer .reel p {
+	position: absolute;
+	top: 260px;
+	left: 0;
+	width: 900px;
+	height: 40px;
+	line-height: 40px;
+	background: #0074C6;
+	text-align: center;
+	opacity: 0.85;
+	font-weight: normal;
+	color: #ffffff;
+	font-size: 1.1em;
+}
+
+#slider .previous-button {
+	position: absolute;
+	top: 180px;
+	left: 0;
+	width: 50px;
+}
+
+#slider .next-button {
+	position: absolute;
+	top: 180px;
+	right: 0;
+	width: 50px;
+}
+
+#slider .indicator {
+	margin: 30px auto 0 auto;
+}
+
+#slider .indicator ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#slider .indicator ul li {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	text-indent: -9999em;
+	background: #c8c8c8;
+	margin: 0 2px 0 2px;
+	border-radius: 8px;
+	border-bottom: solid 1px #ffffff;
+	border-top: solid 1px #909090;
+}
+
+#slider .indicator ul li.active {
+	background: #505050;
+	border-top: solid 1px #505050;
+}

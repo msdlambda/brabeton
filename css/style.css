@@ -1,4 +1,4 @@
-/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+/*--------------------------------------------------------------------- File Name: style_slider.css ---------------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
@@ -368,15 +368,21 @@ ul.btn li:last-child {
      color: #fff;
      background-color: #d2d1d6;
 }
-
+.header-subtitle {
+     margin-top: -0.375rem;
+     margin-bottom: 0;
+     color: #ffffff;
+}
 .header {
      width: 100%;
      padding: 10px 10px;
      /*border-bottom: #c6cad5 solid 12px;*/
-     background-color: #13110e;
+     /*background-color: #13110e;*/
+     background: linear-gradient(90deg, rgba(186,148,21,1) 0%, rgba(0,0,0,1) 0%, rgba(105,82,15,1) 82%);
 }
 .menu-header{
      padding-top: 5%;
+     text-align: center;
 }
 .logo {
      position: relative;
@@ -797,9 +803,24 @@ ul.btn li:last-child {
 
 /** footer **/
 
+.div-align-center{
+     display: inline-block;
+     margin: auto;
+     text-align: center;
+}
+.footer-link-contact{
+     margin: auto;
+     width: 70%;
+     position: absolute;
+     text-align: center !important;
+     display: inline-block;
+}
+#contact{
+     border-top: 5px solid wheat;
+}
 .footer {
-     background: #212121;
-     padding-top: 85px;
+     background: linear-gradient(90deg, rgba(186,148,21,1) 0%, rgba(0,0,0,1) 0%, rgba(105,82,15,1) 82%);
+     padding-top: 10px;
      text-align: center;
 }
 
@@ -901,12 +922,12 @@ ul.social_icon li a:hover {
 }
 
 ul.location_icon {
-     padding-top: 12px;
+     padding: 12px;
      text-align: left;
 }
 
 ul.location_icon li {
-     display: inline-block;
+     display: block;
      font-size: 18px;
      line-height: 20px;
      color: #fff;
@@ -997,8 +1018,8 @@ ul.link li a::after {
 }
 
 .copyright {
-     margin-top: 70px;
-     padding: 20px 0px;
+     margin-top: 80px;
+     padding: 30px 0px;
      background-color: #f4cb1e;
 }
 
