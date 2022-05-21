@@ -338,6 +338,7 @@ ul.btn li:last-child {
 .navigation.navbar-dark .navbar-nav .nav-link.show,
 .navigation.navbar-dark .navbar-nav .show>.nav-link {
      color: black;
+     background-color: #f4cb1e;
 }
 
 .navbar-expand-md .navbar-nav {
