@@ -159,6 +159,9 @@ img {
      outline: 0;
 }
 
+ .logo_section{
+      width: 70% !important;
+ }
 .btn-custom {
      margin-top: 20px;
      background-color: transparent !important;
@@ -334,7 +337,7 @@ ul.btn li:last-child {
 .navigation.navbar-dark .navbar-nav .nav-link.active,
 .navigation.navbar-dark .navbar-nav .nav-link.show,
 .navigation.navbar-dark .navbar-nav .show>.nav-link {
-     color: #f4cb1e;
+     color: black;
 }
 
 .navbar-expand-md .navbar-nav {
@@ -354,7 +357,7 @@ ul.btn li:last-child {
      padding: 8px 39px;
      color: #fff;
      font-size: 16px;
-     background-color: #f4cb1e;
+     background-color: darkgrey;
      text-transform: uppercase;
      margin-top: -10px;
      margin-left: 30px;
@@ -367,27 +370,17 @@ ul.btn li:last-child {
 
 .header {
      width: 100%;
-     padding: 30px 30px;
+     padding: 10px 10px;
      /*border-bottom: #c6cad5 solid 12px;*/
      background-color: #13110e;
 }
-
+.menu-header{
+     padding-top: 5%;
+}
 .logo {
      position: relative;
-     padding-left: 50%;
+     padding-left: 6px;
      padding-top: 6px;
-}
-
-.logo::after {
-     position: absolute;
-     content: "";
-     width: 136px;
-     height: 110px;
-     left: -45px;
-     top: -30px;
-     background: url(../images/top_head.png);
-     background-repeat: no-repeat;
-     border-right: #c6cad5 solid 15px;
 }
 
 
