@@ -7,6 +7,7 @@
    <!-- mobile metas -->
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <meta name="keywords" content="brahim alaoui, centro concreto, mejora tu entorno, paredes, suelos, escaleras, cemento, hormigón, azulejos, interiores, exteriores, albañil barcelona, albañil cerdanyola, piscina, piscinas, decoraciones"/>
    <!-- site metas -->
    <title>Centro Concreto</title>
    <meta name="keywords" content="">
@@ -97,25 +98,68 @@
                </div>
             </div>
             <div class="col-md-12">
-               <form id="request" class="main_form">
+               <form class="main_form" action="https://script.google.com/macros/s/AKfycbzg3YtWlg9bx4MlvvEk2nQ96-LtQHx4B_EWtugdK4DvWiW_kFY/exec" target="_blank" method="post" onsubmit="controlloForm()" id="email_form" name="formmail" dir="ltr">
                   <div class="row">
                      <div class="col-md-3 ">
-                        <input class="contactus" placeholder="Nombre completo" type="text" name="Nombre completo">
+                        <input class="contactus" placeholder="Nombre completo" type="text" name="nome" id="nome" required>
                      </div>
                      <div class="col-md-3">
-                        <input class="contactus" placeholder="Email" type="email" name="Email">
+                        <input class="contactus" placeholder="Email" type="email" name="email" id="email" required>
                      </div>
                      <div class="col-md-3">
-                        <input class="contactus" placeholder="Número de teléfono" type="tel" name="Número de telèfono">
+                        <input class="contactus" placeholder="Número de teléfono" type="tel" name="telefono" id="telefono" minlength="9" maxlength="14" required>
+                     </div>
+                     <div class="col-md-6">
+                        <input class="contactus" placeholder="Asunto del email" type="text" name="oggetto" id="oggetto">
                      </div>
                      <div class="col-md-8">
-                        <textarea class="contactus1" placeholder="Mensaje" type="text" name="Mensaje"></textarea>
+                        <textarea class="contactus1" placeholder="Mensaje" type="text" name="messaggio" id="messaggio" required></textarea>
                      </div>
                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                        <button class="send_btn">Enviar</button>
+                        <button class="send_btn" id="submit_form" value="Enviar">Enviar</button>
                      </div>
                   </div>
                </form>
+
+               <script type="text/javascript" language="JavaScript">
+
+                  /*sezione invio messagggio*/
+
+                  function verificaEmail(email) {
+                     try {
+                        return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+                     }catch (e) {
+                        return false;
+                     }
+                  }
+
+                  function controlloForm() {
+                     const form= document.forms["formmail"];
+                     var nome = form["nome"].value;
+                     var telefono = form["telefono"].value;
+                     var email = form["email"].value;
+                     var msg = form["messaggio"].value;
+
+                     if (nome === "" || email === "" || telefono === "" || msg === "") {
+                        alert("¡Los campos Nombre, Email, Teléfono y Mensaje son obligatorios!");
+                        return false;
+                     } else if (verificaEmail(email) !== true) {
+                        alert("¡La dirección de correo electrónico es incorrecta!");
+                        return false;
+                     }else{
+                        var submitButton = document.getElementById("submit_form");
+                        form.onsubmit(function(e) {
+                           form.addEventListener("submit", function (e) {
+                              setTimeout(function() {
+                                 submitButton.value = "Enviando en progreso...";
+                                 submitButton.disabled = true;
+                              }, 1);
+                           });
+                        });
+                        return window.parent.location.href = "http://www.centroconcreto.com/contact.html";
+                     }
+                  }
+               </script>
             </div>
 
             <div>
