@@ -137,6 +137,7 @@
 
                      const validattion= /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 
+                     const telefonoValidation = /^\d+$/.test(telefono);
                      if (nome === "" || email === "" || telefono === "" || msg === "") {
                         alert("¡Los campos Nombre, Email, Teléfono y Mensaje son obligatorios!");
                         document.getElementById("submit_form").disabled = false;
@@ -144,6 +145,11 @@
                         return false;
                      } else if (validattion === false) {
                         alert("¡La dirección de correo electrónico es incorrecta!");
+                        document.getElementById("submit_form").disabled = false;
+                        e.preventDefault();
+                        return false;
+                     } else if(telefonoValidation === false){
+                        alert("¡El número telefónico es inválido!");
                         document.getElementById("submit_form").disabled = false;
                         e.preventDefault();
                         return false;
