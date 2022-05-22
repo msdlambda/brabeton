@@ -520,7 +520,6 @@ ul.btn li:last-child {
 /** hottest section **/
 
 .hottest {
-     background: #fff;
      padding: 90px 0 0px 0;
 }
 
@@ -604,7 +603,7 @@ ul.btn li:last-child {
 }
 
 .choose_img {
-     background-color: #fff;
+     background-color: blanchedalmond;
      padding: 20px;
      margin-left: 30px;
      margin-right: 40px;
@@ -717,7 +716,7 @@ ul.btn li:last-child {
 
 .about {
      padding: 60px 0px 140px 0px;
-     background: #fff;
+     background-color: blanchedalmond;
 }
 
 .about .titlepage p {
