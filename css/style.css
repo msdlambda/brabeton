@@ -451,7 +451,7 @@ ul.btn li:last-child {
 /** end banner section **/
 
 .titlepage {
-     padding-bottom: 60px;
+     padding-bottom: 0px;
 }
 
 .titlepage h2 {
@@ -659,6 +659,12 @@ ul.btn li:last-child {
      line-height: 30px;
 }
 
+.choose_text_black p {
+     color: #000000;
+     font-size: 17px;
+     line-height: 30px;
+}
+
 .padding_bottom {
      padding-bottom: 30px;
 }
@@ -737,7 +743,7 @@ ul.btn li:last-child {
 }
 
 .test_box {
-     padding: 0 30px;
+     padding: 0;
      background-repeat: no-repeat;
      background-size: 100% 100%;
      min-height: 367px;
