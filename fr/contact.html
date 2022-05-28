@@ -62,18 +62,18 @@
                   <div class="collapse navbar-collapse" id="navbarsExample04">
                      <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                           <a class="nav-link" href="index.html"> Home  </a>
+                           <a class="nav-link" href="index.html"> Accueil  </a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="products.html">Productos </a>
+                           <a class="nav-link" href="products.html">Produits </a>
                         </li>
                         <li class="nav-item active">
-                           <a class="nav-link" href="contact.html">Contacto</a>
+                           <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                      </ul>
                      <div class="nav-lang">
                         <a href="../fr/contact.html">
-                           <img src="../images/fr_lang.png" width="30px"/>
+                           <img src="../images/es_lang.png" width="30px"/>
                         </a>
                      </div>
                   </div>
@@ -101,7 +101,7 @@
                <form class="main_form" action="https://script.google.com/macros/s/AKfycbzg3YtWlg9bx4MlvvEk2nQ96-LtQHx4B_EWtugdK4DvWiW_kFY/exec" onsubmit="controlloForm(event)" target="_blank" method="post" id="email_form" name="formmail" dir="ltr">
                   <div class="row">
                      <div class="col-md-3 ">
-                        <input class="contactus" placeholder="Nombre completo" type="text" name="nome" id="nome" required>
+                        <input class="contactus" placeholder="Nom complet" type="text" name="nome" id="nome" required>
                      </div>
                      <div class="col-md-3">
                         <input class="contactus" placeholder="Email" type="email" name="email" id="email" required>
@@ -110,13 +110,13 @@
                         <input class="contactus" placeholder="Número de teléfono" type="tel" name="telefono" id="telefono" minlength="9" maxlength="14" required>
                      </div>
                      <div class="col-md-6">
-                        <input class="contactus" placeholder="Asunto del email" type="text" name="oggetto" id="oggetto">
+                        <input class="contactus" placeholder="Sujet du courriel" type="text" name="oggetto" id="oggetto">
                      </div>
                      <div class="col-md-8">
-                        <textarea class="contactus1" placeholder="Mensaje" type="text" name="messaggio" id="messaggio" required></textarea>
+                        <textarea class="contactus1" placeholder="Message" type="text" name="messaggio" id="messaggio" required></textarea>
                      </div>
                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                        <button class="send_btn" id="submit_form" name="submitButton" value="Enviar">Enviar</button>
+                        <button class="send_btn" id="submit_form" name="submitButton" value="Enviar">Envoyer</button>
                      </div>
                   </div>
                </form>
@@ -139,23 +139,23 @@
 
                      const telefonoValidation = /^\d+$/.test(telefono);
                      if (nome === "" || email === "" || telefono === "" || msg === "") {
-                        alert("¡Los campos Nombre, Email, Teléfono y Mensaje son obligatorios!");
+                        alert("Les champs Nom, Email, Téléphone et Message sont obligatoires !");
                         document.getElementById("submit_form").disabled = false;
                         e.preventDefault();
                         return false;
                      } else if (validattion === false) {
-                        alert("¡La dirección de correo electrónico es incorrecta!");
+                        alert("L'adresse e-mail est incorrecte!");
                         document.getElementById("submit_form").disabled = false;
                         e.preventDefault();
                         return false;
                      } else if(telefonoValidation === false){
-                        alert("¡El número telefónico es inválido!");
+                        alert("Le numéro de téléphone est invalide!");
                         document.getElementById("submit_form").disabled = false;
                         e.preventDefault();
                         return false;
                      } else {
                         document.getElementById("submit_form").disabled = true;
-                        return window.parent.location.href = "http://www.centroconcreto.com/contact.html";
+                        return window.parent.location.href = "http://www.centroconcreto.com/fr/contact.html";
                      }
                   }
                </script>
@@ -164,8 +164,8 @@
             <div>
                <ul class="location_icon">
                   <li><a href="https://goo.gl/maps/r8LQ7h6vWQqT2Uwr6" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Calle Tort n° 12, 08290 Cerdanyola del Valles, Espana</li>
-                  <li><a href="tel:+34 658748134"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a>Número Espana +34 658748134</li>
-                  <li><a href="tel:+33 658748134"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a>Número France +33 658748134</li>
+                  <li><a href="tel:+34 658748134"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a>Numéro Espagne +34 658748134</li>
+                  <li><a href="tel:+33 658748134"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a>Numéro français +33 658748134</li>
                   <li><a href="mailto:info@centroconcreto.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>info@centroconcreto.com</li>
                </ul>
             </div>
