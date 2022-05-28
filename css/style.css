@@ -618,7 +618,7 @@ ul.btn li:last-child {
 }
 
 .padding_with {
-     max-width: 653px;
+     max-width: 750px;
      float: right;
      width: 100%;
 }
@@ -637,6 +637,7 @@ ul.btn li:last-child {
      width: 140px;
      padding: 10px;
      border-radius: 60px;
+     min-width: 50px
 }
 
 .choose_text {
